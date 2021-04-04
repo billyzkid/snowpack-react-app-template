@@ -1,15 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React, { StrictMode } from 'react';
+import { render } from 'react-dom';
 import io from 'socket.io-client';
 import './index.scss';
 
 const socket = io();
 
 socket.on('new user', (data) => {
-  ReactDOM.render(
-    <React.StrictMode>
+  render(
+    <StrictMode>
       <h1>{data.greeting}</h1>
-    </React.StrictMode>,
+    </StrictMode>,
     document.querySelector('main')
   );
 });
