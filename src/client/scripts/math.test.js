@@ -1,6 +1,6 @@
 import { test } from 'uvu';
 import * as assert from 'uvu/assert'; // See assert docs: https://github.com/lukeed/uvu/blob/next/docs/api.assert.md
-import * as math from '../client/math.js';
+import * as math from './math.js';
 
 test('sum', () => {
   assert.type(math.sum, 'function');

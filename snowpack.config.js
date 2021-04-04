@@ -1,6 +1,6 @@
 export default {
   mount: {
-    client: { url: '/' }
+    'src/client': { url: '/' }
   },
   plugins: [
     '@snowpack/plugin-sass',
