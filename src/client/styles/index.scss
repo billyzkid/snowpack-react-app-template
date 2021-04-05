@@ -1,7 +1,2 @@
 @import './variables';
-
-.app {
-  > h1 {
-    color: $loud-color;
-  }
-}
+@import './app';

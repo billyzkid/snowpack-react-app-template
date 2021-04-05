@@ -1,11 +1,11 @@
 export default {
   mount: {
-    'src/client': { url: '/' }
+    'src/client': { url: '/' },
+    'src/shared': { url: '/scripts/shared' }
   },
   plugins: [
-    '@snowpack/plugin-sass',
     '@snowpack/plugin-react-refresh',
-    '@snowpack/plugin-dotenv'
+    '@snowpack/plugin-sass'
   ],
   routes: [
   ],

@@ -5,7 +5,7 @@ import '../styles/index.scss';
 
 render(
   <StrictMode>
-    <App />
+    <App prop2="baz" />
   </StrictMode>,
   document.getElementById('root')
 );
